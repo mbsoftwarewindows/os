@@ -107,5 +107,5 @@ void kernel_main(void) {
     terminal_initialize();
     
     /* Newline support is left as an exercise. */
-    terminal_writestring("Welcome To OS!\n");
+    terminal_writestring("Welcome To ION!\n");
 }
