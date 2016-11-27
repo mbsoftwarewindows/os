@@ -10,3 +10,6 @@ include Make.conf
 
 all: $(OBJECTS)
 	$(CC) -T arch/$(ARCH)/linker.ld -o $(KERNELNAME) -ffreestanding -O2 -nostdlib $(OBJECTS) -lgcc
+
+clean:
+	rm -f $(OBJECTS) $(KERNELNAME)
